@@ -6,13 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
+    "shopify:dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js",
+    "ngrok": "ngrok http 3000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@shopify/koa-shopify-auth": "^3.2.0",
+    "@shopify/polaris": "^5.12.0",
+    "@zeit/next-css": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "isomorphic-fetch": "^3.0.0",
+    "koa": "^2.13.1",
+    "koa-session": "^6.1.0",
     "next": "^10.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
